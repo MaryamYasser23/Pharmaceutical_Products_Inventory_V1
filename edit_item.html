@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Item</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="imges/image.png" alt="Stock Image">
+        <h1>Edit Item</h1>
+    </div>
+
+    <form action="add_item.html" method="get">
+        <div>
+            <label for="Code">Code</label>
+            <input type="text" name="Code" id="Code">
+        </div> 
+        <br>
+        <div>
+            <label for="Name">Name</label>
+            <input type="text" name="Name" id="Name" autocomplete="on">
+        </div> 
+        <br>
+        <div>
+            <label for="Details">Details</label>
+            <input type="text"name="Details" id="Details">
+        </div>
+        <br>
+        <div>
+            <label for="Quantity">Quantity</label>
+            <input type="text" name="Quantity" id="Quantity">
+        </div>
+        <br>
+        <div>
+            <label for="Price">Price</label>
+            <input type="text"name="Price" id="Price">
+        </div>
+        <br>
+        <div>
+            <label for="Category">Category</label>
+            <select name="Category" id="Category">
+                <option value="tbody-all">Product</option>
+                <option value="tbody-need">Need</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="BestSeller" id="BestSeller">
+            <label for="BestSeller">BestSeller</label>
+        </div>
+        <br>
+        <button type="button" class="save-btn">Save</button>
+    </form>
+
+    <script src="main-edit_item.js"></script>
+</body>
+</html>
